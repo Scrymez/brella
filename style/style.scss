@@ -1,1 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+    background-color: #E3EEED;
+}
+
+
+
+
+
+.container {
+width: 1440px;
+background-color: rgba($color: #302a2a, $alpha: .5);
+margin: 0 auto;
+        //*location on the page
+        .header {
+            position: relative;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            background-color: white;
+            .logo {
+                position: relative;
+                margin-left: 45px;
+            }
+            .header__nav {
+                position: relative;
+                width: 977px;
+                height: 20px;
+                .header__menu {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    .header__menu-item {
+                        margin-left: 50px;
+                    }
+                    .header__menu-item:first-child {
+                        margin-left: 0px;
+                    }
+                    //*FONTS
+                    .header__menu-link{
+                        color: #214E41;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-family: 'Raleway', Times, serif;
+                    }
+                    .header__menu-link:focus, .header__menu-link:hover {
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                        
+                    }
+                    .btn__link {
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-family: 'Raleway', Times, serif;
+                    }
+                    }
+                    //*BTN NAV
+                    .header__menu-btn {
+                        width: 137px;
+                        height: 40px;
+                        background-color: #43806C;
+                        border-radius: 6px;
+                    }
+                    .header__menu-btn:hover, .header__menu-btn:focus{
+                        background-color: #4aac8b;  
+                    }
+                }
+            }
+        }
+}
