@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
 body {
-  background-color: #E3EEED;
+  background-color: #ffffff;
 }
 
-.container {
-  width: 1440px;
-  background-color: rgba(48, 42, 42, 0.5);
-  margin: 0 auto;
-}
 .container .header {
+  width: 1440px;
+  margin: 0 auto;
   position: relative;
   top: 0;
   display: -webkit-box;
@@ -47,6 +44,15 @@ body {
 .container .header .header__nav .header__menu .header__menu-item:first-child {
   margin-left: 0px;
 }
+.container .header .header__nav .header__menu .arrow--down {
+  padding-right: 20px;
+  background: url("../image/ico/arrow__down.jpg") right center no-repeat;
+}
+.container .header .header__nav .header__menu .arrow--down:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: url("../image/ico/arrow__down.jpg") right 5px no-repeat;
+}
 .container .header .header__nav .header__menu .header__menu-link {
   color: #214E41;
   font-size: 14px;
@@ -62,15 +68,109 @@ body {
   font-weight: bold;
   font-family: "Raleway", Times, serif;
 }
-.container .header .header__nav .header__menu .btn__link:focus, .container .header .header__nav .header__menu .btn__link:hover {
-  text-shadow: 2px 2px 4px rgba(96, 180, 152, 0.5);
-}
-.container .header .header__nav .header__menu .header__menu-btn {
+.container .header .header__nav .header__menu-btn {
   width: 137px;
   height: 40px;
   background-color: #43806C;
   border-radius: 6px;
 }
-.container .header .header__nav .header__menu .header__menu-btn:hover, .container .header .header__nav .header__menu .header__menu-btn:focus {
+.container .header .header__nav .header__menu-btn:hover, .container .header .header__nav .header__menu-btn:focus {
   background-color: #4aac8b;
+}
+.container .wrapper {
+  position: relative;
+  margin-top: 0px;
+}
+.container .wrapper .intro {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #CAC8BB;
+  background: url("../image/bg/bg1.jpg") center no-repeat;
+  height: 720px;
+}
+.container .wrapper .intro .intro__wrapper {
+  position: relative;
+  top: 161px;
+  left: 8%;
+  width: 500px;
+}
+.container .wrapper .intro .intro__title {
+  color: #214E41;
+  font-size: 36px;
+  font-family: "roboto", sans-serif;
+  line-height: 46px;
+  font-weight: bold;
+}
+.container .wrapper .intro .intro__search-desk {
+  margin-top: 40px;
+  font-family: "raleway", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #214E41;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.container .wrapper .intro .intro__search {
+  position: relative;
+  width: 280px;
+  height: 60px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-box-shadow: 0px 4px 4px rgb(129, 129, 123);
+          box-shadow: 0px 4px 4px rgb(129, 129, 123);
+}
+.container .wrapper .intro .intro__search::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+  line-height: 20px;
+  color: #222222;
+}
+.container .wrapper .intro .intro__search::-moz-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+  line-height: 20px;
+  color: #222222;
+}
+.container .wrapper .intro .intro__search:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+  line-height: 20px;
+  color: #222222;
+}
+.container .wrapper .intro .intro__search::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+  line-height: 20px;
+  color: #222222;
+}
+.container .wrapper .intro .intro__search::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+  line-height: 20px;
+  color: #222222;
+}
+.container .wrapper .intro .intro__btn {
+  position: relative;
+  width: 123px;
+  height: 62px;
+  margin-left: -4px;
+  background-color: #43806C;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "raleway", sans-serif;
+  line-height: 20px;
 }
