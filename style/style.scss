@@ -10,7 +10,7 @@ body{
 
 .container {
         //*location on the page
-        .header {
+        .header {   //?HEADER 
             width: 1440px;
             margin: 0 auto;
             position: relative;
@@ -43,8 +43,8 @@ body{
                         background: url('../image/ico/arrow__down.jpg') right center no-repeat;
                     }
                     .arrow--down:hover {
-                        transition: .3s;
-                        background: url('../image/ico/arrow__down.jpg') right 5px no-repeat;
+                        transition: .2s;
+                        background: url('../image/ico/arrow__down.jpg') right 6px no-repeat;
                     }
                     //*FONTS
                     .header__menu-link{
@@ -80,7 +80,7 @@ body{
          .wrapper {
             position: relative;
             margin-top: 0px;
-            .intro{
+            .intro{ //?INTRO 
                 width: 1440px;
                 margin: 0 auto;
                 position: relative;
@@ -142,9 +142,233 @@ body{
                     line-height: 20px;
                 }
              }
+             .aside{
+                position: relative;
+                z-index: 1;
+                max-width: 1200px;
+                height: 171px;
+                background-color: #fff;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: -76px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                border-radius: 6px;
+                .aside__block {
+                    position: relative;
+                    width: 356px;
+                    display: flex;
+                    justify-content: left;
+                    flex-wrap: wrap;
+                    .aside__ico {
+                        margin-top: 7px;
+                        margin-right: 9px;
+                    }
+                    //*TEXT
+                    .aside__text {
+                        color: #214E41;
+                        font-weight: regular;
+                        font-family: 'raleway', sans-serif;
+                        .aside__title{
+                            font-size: 16px;
+                            line-height: 24px;
+                            margin-bottom: 7px;
+                        }
+                        .aside__desk{
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                 }
+                 .aside__block:nth-child(even) {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                 }
+             }
+             .chart {
+                position: relative;
+                height: 728px;
+                margin-top: -95px;
+                .chart__container {
+                    position: relative;
+                    top: 160px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    .chart__text {
+                        position: relative;
+                        margin-right: 60px;
+                        max-width: 510px;
+                        margin-top: 37px;
+                        margin-right: 60px;
+                        //*Fonts
+                        .chart__text--question{
+                            font-family: 'Raleway' ,sans-serif;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            color: #43806C;
+                            text-transform: uppercase;
+                        }
+                        .chart__text--title{
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 36px;
+                            font-weight: 700;
+                            line-height: 46px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #214E41;
+
+                            margin-top: 20px;
+                            max-width: 478px;
+                        }
+                        .chart__text--desk {
+                            font-family: 'Raleway', sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            text-align: left;
+
+                            margin-top: 34px;
+                            max-width: 477px;
+                        }
+                        .chart__text--btn{
+                            width: 107px;
+                            height: 36px;
+                            border-bottom: 2px solid #214E41; 
+                            background-color: #fff;
+                            border-top-left-radius: 6px;
+                            border-top-right-radius: 6px;
+                            margin-top: 26px;
+                            margin-left: 0;
+                            .btn--text{
+                                font-family: Raleway;
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 18px;
+                                text-align: center;
+                                color: #214E41;
+                            }
+                        }
+                        .chart__text--btn:hover, .chart__text--btn:focus {
+                            transition: .2s;
+                            background-color: #d3fae4;
+                        }
+                    }
+                    .chart__diagram{
+                        position: relative;
+                        top: 176px;
+                        width: 510px;
+                        height: 510px;
+                        // margin-right: 90px;
+                        .chart__diagram--desk{
+                            position: relative;
+                            margin-right: 100px;
+                            .chart__diagram--title {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 70px;
+                                font-weight: 700;
+                                line-height: 90px;
+                                text-align: left;
+                                color: #214E41;
+                                width: 153px;
+                                height: 90px;
+                            }
+                            .chart__diagram--line{
+                                position: absolute;
+                                z-index: 2;
+                                margin-top: 10px;
+                                width: 510px;
+                                height: 2px;
+                                background-color: #F0A446;
+                            }
+                            .chart__diagram--text {
+                                position: relative;
+                                max-width: 224px;
+                                margin-top: 30px;
+                                font-family: 'Raleway', sans-serif;
+                                font-size: 13px;
+                                font-weight: 700;
+                                line-height: 22px;
+                                text-align: left;
+                                color: #214E41;
+                            }
+                        }
+                        .chart__diagram--block{
+                            position: absolute;
+                            right: 70px;
+                            top: 0px;
+                            display: flex;
+                            justify-content: right;
+                            align-items: end; //!НЕОБХОДМО РАСПОЛОЖИТЬ ДИАГРАММЫ ПРАВИЛЬНО ПО МАКЕТУ КЛАССЫ chart__diagram chart__diagram--desk chart__diagram--block НО СНАЧАЛА РЕШИТЬ ПРОБЛЕМУ С SCSS
+                            .diagram__first--block{
+                                position: relative;
+                                width: 117.5px;
+                                height: 214px;
+                                margin-left: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin-right: 20px;
+                                .diagram--currency{
+                                    font-family: 'Raleway', sans-serif;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    line-height: 22px;
+                                    text-align: center;
+                                }
+                                .first--chart{
+                                    position: relative;
+                                    width: 78px;
+                                    height: 150px;
+                                    background-color: #43806C;
+                                }
+                                .diagram__title{
+                                    font-family: Raleway;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    line-height: 22px;
+                                    text-align: center;
+                                    margin-top: 20px;
+                                }
+                            }
+                            .diagram__last--block{
+                                margin-left: 20px;
+                                .diagram--currency{
+                                    font-family: 'Raleway', sans-serif;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    line-height: 22px;
+                                    text-align: center;
+                                }
+                                .last--chart{
+                                    position: relative;
+                                    width: 78px;
+                                    height: 300px;
+                                    background-color: #43806C;
+                                }
+                                .diagram__title{
+                                    font-family: Raleway;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    line-height: 22px;
+                                    text-align: center;
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+             }
+             
          }
         }
-
+//!НЕОБХОДМО РАСПОЛОЖИТЬ ДИАГРАММЫ ПРАВИЛЬНО ПО МАКЕТУ КЛАССЫ chart__diagram chart__diagram--desk chart__diagram--block НО СНАЧАЛА РЕШИТЬ ПРОБЛЕМУ С SCSS
 
 
 
