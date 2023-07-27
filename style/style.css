@@ -3,6 +3,9 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  margin: 0 auto;
+}
 .container .header {
   width: 1440px;
   margin: 0 auto;
@@ -177,42 +180,44 @@ body {
 .container .wrapper .aside .aside__block .aside__text .aside__desk {
   font-size: 14px;
   line-height: 20px;
+  max-width: 269px;
 }
 .container .wrapper .aside .aside__block:nth-child(even) {
   margin-left: 16px;
   margin-right: 16px;
 }
-.container .wrapper .chart {
+.container .wrapper .wrapper__chart {
   position: relative;
-  height: 728px;
-  margin-top: -95px;
+  min-height: 728px;
+  top: -94.5px;
 }
-.container .wrapper .chart .chart__container {
+.container .wrapper .wrapper__chart .chart__container {
   position: relative;
   top: 160px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 432px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
-.container .wrapper .chart .chart__container .chart__text {
+.container .wrapper .wrapper__chart .chart__container .chart__container--left {
   position: relative;
-  margin-right: 60px;
-  max-width: 510px;
-  margin-top: 37px;
-  margin-right: 60px;
+  top: 37px;
+  width: 510px;
 }
-.container .wrapper .chart .chart__container .chart__text .chart__text--question {
+.container .wrapper .wrapper__chart .chart__container .chart__container--left .chart__greetings--left {
   font-family: "Raleway", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
+  letter-spacing: 0.0500000007px;
+  text-align: left;
   color: #43806C;
-  text-transform: uppercase;
 }
-.container .wrapper .chart .chart__container .chart__text .chart__text--title {
+.container .wrapper .wrapper__chart .chart__container .chart__container--left .chart__title--left {
+  margin-top: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -220,139 +225,154 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #214E41;
-  margin-top: 20px;
-  max-width: 478px;
 }
-.container .wrapper .chart .chart__container .chart__text .chart__text--desk {
+.container .wrapper .wrapper__chart .chart__container .chart__container--left .chart__desk--left {
+  margin-top: 34px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  letter-spacing: 0.0199999996px;
   text-align: left;
-  margin-top: 34px;
-  max-width: 477px;
+  color: #757575;
 }
-.container .wrapper .chart .chart__container .chart__text .chart__text--btn {
-  width: 107px;
-  height: 36px;
+.container .wrapper .wrapper__chart .chart__container .chart__container--left .chart__btn--left {
+  position: relative;
+  left: 0;
+  margin-top: 26px;
+  color: #214E41;
   border-bottom: 2px solid #214E41;
-  background-color: #fff;
+  width: 107PX;
+  height: 37px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  margin-top: 26px;
-  margin-left: 0;
+  background-color: white;
 }
-.container .wrapper .chart .chart__container .chart__text .chart__text--btn .btn--text {
+.container .wrapper .wrapper__chart .chart__container .chart__container--left .chart__btn--left .chart__btn--link {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+  letter-spacing: 0.0199999996px;
   text-align: center;
   color: #214E41;
 }
-.container .wrapper .chart .chart__container .chart__text .chart__text--btn:hover, .container .wrapper .chart .chart__container .chart__text .chart__text--btn:focus {
+.container .wrapper .wrapper__chart .chart__container .chart__container--left .chart__btn--left:hover {
   transition: 0.2s;
-  background-color: #d3fae4;
+  background-color: #5cd4b2;
 }
-.container .wrapper .chart .chart__container .chart__diagram {
+.container .wrapper .wrapper__chart .chart__container .chart__container--right {
   position: relative;
-  top: 176px;
+  left: 60px;
   width: 510px;
-  height: 510px;
 }
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--desk {
-  position: relative;
-  margin-right: 100px;
-}
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--desk .chart__diagram--title {
-  font-family: "Roboto", sans-serif;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 90px;
-  text-align: left;
-  color: #214E41;
-  width: 153px;
-  height: 90px;
-}
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--desk .chart__diagram--line {
-  position: absolute;
-  z-index: 2;
-  margin-top: 10px;
-  width: 510px;
-  height: 2px;
-  background-color: #F0A446;
-}
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--desk .chart__diagram--text {
-  position: relative;
-  max-width: 224px;
-  margin-top: 30px;
-  font-family: "Raleway", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 22px;
-  text-align: left;
-  color: #214E41;
-}
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block {
-  position: absolute;
-  right: 70px;
-  top: 0px;
-  display: flex;
-  justify-content: right;
-  align-items: end;
-}
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block .diagram__first--block {
-  position: relative;
-  width: 117.5px;
-  height: 214px;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 20px;
-}
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block .diagram__first--block .diagram--currency {
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .diagram__num {
   font-family: "Raleway", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
+  letter-spacing: 0em;
   text-align: center;
+  color: #214E41;
 }
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block .diagram__first--block .first--chart {
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .diagram__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 20px;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int {
+  position: relative;
+  top: 36px;
+  bottom: 32px;
+  display: flex;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--left {
+  position: relative;
+  top: 133px;
+  left: 0;
+  width: 255px;
+  height: 186px;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--left .chart__layout--title {
+  margin-left: 10px;
+  color: #214E41;
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--left .chart__layout--desk {
+  margin-left: 10px;
+  margin-top: 30px;
+  color: #214E41;
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.0199999996px;
+  text-align: left;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--left .chart__layout--desk .border__bottom {
+  border-bottom: 1px solid #214E41;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__line {
+  position: absolute;
+  top: 233px;
+  margin-left: 10px;
+  z-index: 2;
+  height: 2px;
+  width: 510px;
+  background-color: #F0A446;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--right {
+  position: relative;
+  margin-left: 10px;
+  display: flex;
+  align-items: end;
+  width: 235px;
+  height: 364px;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--right .diagram--left {
+  position: relative;
+  width: 117.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--right .diagram--left .diagram--left__rectangle {
   position: relative;
   width: 78px;
   height: 150px;
   background-color: #43806C;
 }
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block .diagram__first--block .diagram__title {
-  font-family: Raleway;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 22px;
-  text-align: center;
-  margin-top: 20px;
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--right .diagram--right {
+  position: relative;
+  width: 117.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block .diagram__last--block {
-  margin-left: 20px;
-}
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block .diagram__last--block .diagram--currency {
-  font-family: "Raleway", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: center;
-}
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block .diagram__last--block .last--chart {
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__block--int .chart__layout--right .diagram--right .diagram--right__rectangle {
   position: relative;
   width: 78px;
   height: 300px;
   background-color: #43806C;
 }
-.container .wrapper .chart .chart__container .chart__diagram .chart__diagram--block .diagram__last--block .diagram__title {
+.container .wrapper .wrapper__chart .chart__container .chart__container--right .chart__end {
+  position: absolute;
+  top: 410px;
+  left: 253px;
   font-family: Raleway;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 22px;
+  letter-spacing: 0em;
   text-align: center;
-  margin-top: 20px;
+  color: #757575;
 }/*# sourceMappingURL=style.css.map */

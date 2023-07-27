@@ -9,6 +9,7 @@ body{
 
 
 .container {
+    margin: 0 auto;
         //*location on the page
         .header {   //?HEADER 
             width: 1440px;
@@ -142,7 +143,7 @@ body{
                     line-height: 20px;
                 }
              }
-             .aside{
+            .aside{
                 position: relative;
                 z-index: 1;
                 max-width: 1200px;
@@ -179,6 +180,7 @@ body{
                         .aside__desk{
                             font-size: 14px;
                             line-height: 20px;
+                            max-width: 269px;
                         }
                     }
                  }
@@ -186,36 +188,36 @@ body{
                     margin-left: 16px;
                     margin-right: 16px;
                  }
-             }
-             .chart {
+             }  
+            .wrapper__chart{
                 position: relative;
-                height: 728px;
-                margin-top: -95px;
+                min-height: 728px;
+                top: -94.5px;
                 .chart__container {
                     position: relative;
                     top: 160px;
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    height: 432px;
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
-                    align-items: center;
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    .chart__text {
+                    .chart__container--left{
                         position: relative;
-                        margin-right: 60px;
-                        max-width: 510px;
-                        margin-top: 37px;
-                        margin-right: 60px;
-                        //*Fonts
-                        .chart__text--question{
-                            font-family: 'Raleway' ,sans-serif;
+                        top: 37px;
+                        width: 510px;
+                        .chart__greetings--left{
+                            font-family: 'Raleway', sans-serif;
                             font-size: 13px;
                             font-weight: 400;
                             line-height: 20px;
+                            letter-spacing: 0.05000000074505806px;
+                            text-align: left;
                             color: #43806C;
-                            text-transform: uppercase;
                         }
-                        .chart__text--title{
+                        .chart__title--left{
+                            margin-top: 20px;
                             font-family: 'Roboto', sans-serif;
                             font-size: 36px;
                             font-weight: 700;
@@ -223,152 +225,168 @@ body{
                             letter-spacing: 0em;
                             text-align: left;
                             color: #214E41;
-
-                            margin-top: 20px;
-                            max-width: 478px;
                         }
-                        .chart__text--desk {
+                        .chart__desk--left{
+                            margin-top: 34px;
                             font-family: 'Raleway', sans-serif;
                             font-size: 18px;
                             font-weight: 400;
                             line-height: 30px;
+                            letter-spacing: 0.019999999552965164px;
                             text-align: left;
-
-                            margin-top: 34px;
-                            max-width: 477px;
+                            color: #757575;
                         }
-                        .chart__text--btn{
-                            width: 107px;
-                            height: 36px;
-                            border-bottom: 2px solid #214E41; 
-                            background-color: #fff;
+                        .chart__btn--left {
+                            position: relative;
+                            left: 0;
+                            margin-top: 26px;
+                            color: #214E41;
+                            border-bottom: 2px solid #214E41;
+                            width: 107PX;
+                            height: 37px;
                             border-top-left-radius: 6px;
                             border-top-right-radius: 6px;
-                            margin-top: 26px;
-                            margin-left: 0;
-                            .btn--text{
+                            background-color: white;
+                            .chart__btn--link{
                                 font-family: Raleway;
-                                font-size: 18px;
-                                font-weight: 700;
-                                line-height: 18px;
-                                text-align: center;
-                                color: #214E41;
-                            }
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 18px;
+                            letter-spacing: 0.019999999552965164px;
+                            text-align: center;
+                            color: #214E41;
+                            }                  
                         }
-                        .chart__text--btn:hover, .chart__text--btn:focus {
+                        .chart__btn--left:hover{
                             transition: .2s;
-                            background-color: #d3fae4;
+                            background-color: #5cd4b2;
                         }
+                        
                     }
-                    .chart__diagram{
+                    .chart__container--right{
                         position: relative;
-                        top: 176px;
+                        left: 60px;
                         width: 510px;
-                        height: 510px;
-                        // margin-right: 90px;
-                        .chart__diagram--desk{
+                        .diagram__num{
+                            font-family: 'Raleway', sans-serif;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 22px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            color: #214E41;
+                        }
+                        .diagram__title{
+                            font-family: 'Raleway', sans-serif;
+                            font-size: 13px;
+                            font-weight: 700;
+                            line-height: 22px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            margin-top: 20px;
+
+                        }
+                        .chart__block--int {
                             position: relative;
-                            margin-right: 100px;
-                            .chart__diagram--title {
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 70px;
-                                font-weight: 700;
-                                line-height: 90px;
-                                text-align: left;
-                                color: #214E41;
-                                width: 153px;
-                                height: 90px;
+                            top: 36px;
+                            bottom: 32px;
+                            display: flex;
+                            .chart__layout--left {
+                                position: relative;
+                                top: 133px;
+                                left: 0;
+                                width: 255px;
+                                height: 186px;
+                                .chart__layout--title{
+                                    margin-left: 10px;
+                                    color: #214E41;
+                                    font-family: Roboto;
+                                    font-size: 70px;
+                                    font-weight: 700;
+                                    line-height: 90px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                }
+                                .chart__layout--desk{
+                                    margin-left: 10px;
+                                    margin-top: 30px;
+                                    color: #214E41;
+                                    font-family: Raleway;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    line-height: 22px;
+                                    letter-spacing: 0.019999999552965164px;
+                                    text-align: left;
+                                    .border__bottom{
+                                        border-bottom: 1px solid #214E41;
+                                    }
+                                }
                             }
-                            .chart__diagram--line{
+                            .chart__line{
                                 position: absolute;
+                                top: 233px;
+                                margin-left: 10px;
                                 z-index: 2;
-                                margin-top: 10px;
-                                width: 510px;
                                 height: 2px;
+                                width: 510px;
                                 background-color: #F0A446;
                             }
-                            .chart__diagram--text {
+                            .chart__layout--right{
                                 position: relative;
-                                max-width: 224px;
-                                margin-top: 30px;
-                                font-family: 'Raleway', sans-serif;
-                                font-size: 13px;
-                                font-weight: 700;
-                                line-height: 22px;
-                                text-align: left;
-                                color: #214E41;
-                            }
-                        }
-                        .chart__diagram--block{
-                            position: absolute;
-                            right: 70px;
-                            top: 0px;
-                            display: flex;
-                            justify-content: right;
-                            align-items: end; //!НЕОБХОДМО РАСПОЛОЖИТЬ ДИАГРАММЫ ПРАВИЛЬНО ПО МАКЕТУ КЛАССЫ chart__diagram chart__diagram--desk chart__diagram--block НО СНАЧАЛА РЕШИТЬ ПРОБЛЕМУ С SCSS
-                            .diagram__first--block{
-                                position: relative;
-                                width: 117.5px;
-                                height: 214px;
+                                
                                 margin-left: 10px;
                                 display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                margin-right: 20px;
-                                .diagram--currency{
-                                    font-family: 'Raleway', sans-serif;
-                                    font-size: 13px;
-                                    font-weight: 400;
-                                    line-height: 22px;
-                                    text-align: center;
-                                }
-                                .first--chart{
+                                align-items: end;
+                                width: 235px;
+                                height: 364px;
+                                .diagram--left{
                                     position: relative;
-                                    width: 78px;
-                                    height: 150px;
-                                    background-color: #43806C;
+                                    width: 117.5px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    .diagram--left__rectangle{
+                                        position: relative;
+                                        width: 78px;
+                                        height: 150px;
+                                        background-color: #43806C;
+                                    }
                                 }
-                                .diagram__title{
-                                    font-family: Raleway;
-                                    font-size: 13px;
-                                    font-weight: 700;
-                                    line-height: 22px;
-                                    text-align: center;
-                                    margin-top: 20px;
+                                .diagram--right{
+                                    position: relative;
+                                    width: 117.5px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    .diagram--right__rectangle{
+                                        position: relative;
+                                        width: 78px;
+                                        height: 300px;
+                                        background-color: #43806C;
+                                    }
                                 }
                             }
-                            .diagram__last--block{
-                                margin-left: 20px;
-                                .diagram--currency{
-                                    font-family: 'Raleway', sans-serif;
-                                    font-size: 13px;
-                                    font-weight: 400;
-                                    line-height: 22px;
-                                    text-align: center;
-                                }
-                                .last--chart{
-                                    position: relative;
-                                    width: 78px;
-                                    height: 300px;
-                                    background-color: #43806C;
-                                }
-                                .diagram__title{
-                                    font-family: Raleway;
-                                    font-size: 13px;
-                                    font-weight: 700;
-                                    line-height: 22px;
-                                    text-align: center;
-                                    margin-top: 20px;
-                                }
-                            }
+                        }
+                        .chart__end{
+                            position: absolute;
+                            top: 410px;
+                            left: 253px;
+                            font-family: Raleway;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 22px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            color: #757575;
+
                         }
                     }
                 }
-             }
-             
+            } 
+
          }
         }
-//!НЕОБХОДМО РАСПОЛОЖИТЬ ДИАГРАММЫ ПРАВИЛЬНО ПО МАКЕТУ КЛАССЫ chart__diagram chart__diagram--desk chart__diagram--block НО СНАЧАЛА РЕШИТЬ ПРОБЛЕМУ С SCSS
+
 
 
 
