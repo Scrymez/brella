@@ -649,6 +649,74 @@ body {
             
         }
     }
+    .wrapper__employers{
+      position: relative;
+      top: 240px;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1440px;
+      height: 522px;
+      background: url(../image/bg/bg2.jpg) 0 0/100% auto no-repeat;
+      .employers__block{
+        position: relative;
+        top: 125.5px;
+        left: 120px;
+        width: 500px;
+        .employers__header{
+          font-family: Raleway;
+                font-size: 13px;
+                font-weight: 900;
+                line-height: 20px;
+                letter-spacing: 0.05000000074505806px;
+                text-align: left;
+                color: #43806C;
+                text-transform: uppercase;
+        }
+        .employers__h2{
+          width: 484px;
+                font-family: Roboto;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 46px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #214E41;
+                margin-top: 20px;
+        }
+        .employers__desk{
+          width: 546px;
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.019999999552965164px;
+            text-align: left;
+            color: #757575;
+            margin-top: 34px;
+        }
+        .employers__btn{
+          font-family: Raleway;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0.019999999552965164px;
+                text-align: center;
+                margin-top: 26px;
+
+                color: #214e41;
+                border-bottom: 2px solid #214e41;
+                width: 130px;
+                height: 30px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                background: none;
+        }
+        .employers__btn:hover{
+          transition: 0.2s;
+                background-color: #5cd4b2;
+        }
+      }
+    }
 
   } //*wrapper-end
 }
