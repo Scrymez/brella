@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./image/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./image/favicon/safari-pinned-tab.svg" color="#27f4a7">
+    <link rel="shortcut icon" href="./image/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#27f4a7">
+    <meta name="msapplication-config" content="./image/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#27f4a7">
+    <title>Брелла</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style_ru.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="#!" class="logo-link">
+                    <img src="./image/logo/logo1.svg" width="75px" height="24px" alt="Нет логотипа" class="logo__image"
+                        title="Brella" />
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="#!" class="header__menu-link" title="Перейти по ссылке">Наш план</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#!" class="header__menu-link" title="Перейти по ссылке">Работодатели</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#!" class="header__menu-link" title="Перейти по ссылке">Брокеры</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#!" class="header__menu-link" title="Перейти по ссылке">Участники</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#!" class="header__menu-link" title="Перейти по ссылке">О нас</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#!" class="header__menu-link" title="Перейти по ссылке">Блог</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <button class="header__menu-btn">
+                            <a href="#!" class="btn__link" title="Перейти по ссылке">Запросить демо</a>
+                        </button>
+                        <!-- ?СОЗДАТЬ СТРАНИЦУ ВХОДА В ВИДЕ ВКЛАДКИ -->
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#!" class="header__menu-link arrow--down" title="Login">Авторизоваться</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#!" class="header__menu-link" title="RU">RU</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="wrapper">
+            <section class="intro">
+                <div class="intro__wrapper">
+                    <h1 class="intro__title">
+                        Подарите своей команде душевное спокойствие с помощью дополнительной медицинской страховки.
+                        от Бреллы.
+                    </h1>
+                    <form action="/search" method="get" class="intro__form">
+                        <p class="intro__search-desk">Мне любопытно...</p>
+                        <input title="Максимум символов 500" maxlength="500" type="search" name="search"
+                            id="search__input" class="intro__search" placeholder="как работает план Брелла" />
+                        <button type="submit" class="intro__btn">Узнать</button>
+                    </form>
+                </div>
+            </section>
+            <aside class="aside" title="Brella is cool!">
+                <div class="aside__block">
+                    <img src="./image/ico/aside1.png" alt="Нет изображение" class="aside__ico"
+                        style="max-width: 59px; max-height: 45px;" />
+                    <div class="aside__text">
+                        <h3 class="aside__title">More coverage</h3>
+                        <p class="aside__desk">
+                            Brella покрывает более 13 000 травм и заболеваний от сотрясений до
+                            рака.
+                        </p>
+                    </div>
+                </div>
+                <div class="aside__block">
+                    <img src="./image/ico/aside2.png" alt="Нет изображение" class="aside__ico"
+                        style="max-width: 59px; max-height: 45px" />
+                    <div class="aside__text">
+                        <h3 class="aside__title">Less hassle</h3>
+                        <p class="aside__desk">
+                            Один простой в управлении план с безбумажной установкой и онлайн-администрированием
+                            инструментов.
+                        </p>
+                    </div>
+                </div>
+                <div class="aside__block">
+                    <img src="./image/ico/aside3.png" alt="Нет изображение" class="aside__ico"
+                        style="max-width: 59px; max-height: 45px" />
+                    <div class="aside__text">
+                        <h3 class="aside__title">Faster benefits</h3>
+                        <p class="aside__desk">
+                            Brella оплачивает заявки в течение нескольких часов, а не недель, чтобы ваши сотрудники
+                            могли отдохнуть
+                            легкий.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+            <section class="wrapper__chart">
+                <div class="chart__container">
+                    <div class="chart__container--left">
+                        <span class="chart__greetings--left"> Почему Брелла ? </span>
+                        <h2 class="chart__title--left">
+                            Сегодня любая франшиза по медицинскому страхованию может показаться высокой.
+                            франшиза.
+                        </h2>
+                        <p class="chart__desk--left">
+                            Дополнительный план медицинского обслуживания Brella увеличивает пользу для вашего здоровья
+                            стратегия, направленная на то, чтобы трудности со здоровьем не стали финансовыми
+                            бремя.
+                        </p>
+                        <button class="chart__btn--left">
+                            <a href="#!" class="chart__btn--link"> Смотрите наш план </a>
+                        </button>
+                    </div>
+                    <div class="chart__container--right">
+                        <div class="chart__block--int">
+                            <div class="chart__layout--left">
+                                <h2 class="chart__layout--title" title="60%">60%</h2>
+                                <p class="chart__layout--desk">
+                                    Американцам
+                                    <span class="border__bottom">пришлось бы брать взаймы</span> на
+                                    покрытие непредвиденных расходов в размере 1000 долларов США
+                                </p>
+                            </div>
+                            <div class="chart__line"></div>
+                            <!--! Линия -->
+                            <div class="chart__layout--right">
+                                <div class="diagram--left">
+                                    <span class="diagram__num"> $1,644 </span>
+                                    <div class="diagram--left__rectangle"></div>
+                                    <!--! Прямоугольник -->
+                                    <h3 class="diagram__title">Франшиза</h3>
+                                </div>
+                                <div class="diagram--right">
+                                    <span class="diagram__num"> $4,039 </span>
+                                    <div class="diagram--right__rectangle"></div>
+                                    <!--! Прямоугольник -->
+                                    <h3 class="diagram__title">Годовой Макс.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="chart__end">
+                            Индивидуальные средние показатели за 2020 г. (Источник: KFF)
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper__text-content">
+                <div class="wrapper__text--left">
+                    <div class="text__block--first">
+                        <span class="text__block--header"> брелла приносит </span>
+                        <h2 class="text__block--h">Настраиваемые преимущества</h2>
+                        <div class="text__block--content">
+                            <h3 class="content__text--h3">Безбумажная установка</h3>
+                            <h3 class="content__text--h3">Легкая регистрация</h3>
+                            <h3 class="content__text--h3">Легкий опыт претензий</h3>
+                            <h3 class="content__text--h3">Быстрые выплаты пособий</h3>
+                            <h3 class="content__text--h3">Консьерж-поддержка</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper__text--right">
+                    <div class="text__block--last">
+                        <p class="text__dest--first">
+                            Каждый тарифный план Brella включает следующие преимущества: Умеренный, Серьезный и
+                             Катастрофические условия. Сотрудники могут выбирать суммы выплат
+                             которые соответствуют их потребностям и их бюджету.
+                        </p>
+                        <p class="text__desk--last">
+                            Работодатели могут финансировать часть или все страховые взносы или предлагать Brella
+                             в качестве добровольной выгоды. Выбор остается за вами.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper__plane">
+                <div class="plane__block--first">
+                    <div class="plane__block--left">
+                        <span class="plane__block--header">один план, больше покрытия</span>
+                        <h2 class="plane__block--h2">
+                            Никто не может предсказать, какие проблемы со здоровьем могут возникнуть.
+                        </h2>
+                        <p class="plane__block--desk">
+                            Наше широкое дополнительное покрытие избавляет от догадок и
+                             кладет деньги в карманы вашей команды для большинства условий, которые
+                             требуют срочной медицинской помощи.
+                        </p>
+                    </div>
+                    <div class="plane__block--right">
+                        <img title="one plan, more coverage" src="./image/plane/plane1.jpg" alt="Not image"
+                            class="plane__img" />
+                    </div>
+                </div>
+                <div class="plane__block--last">
+                    <div class="plane__info">
+                        <h3 class="plane__title">5K</h3>
+                        <p class="plane__desk">
+                            покрываются травмы и заболевания от переломов и аппендицита
+                             к раку
+                        </p>
+                    </div>
+                    <div class="plane__info">
+                        <h3 class="plane__title">1X</h3>
+                        <p class="plane__desk">
+                            больше покрываемых состояний, чем несчастный случай и критическое заболевание
+                             планы — комбинированные
+                        </p>
+                    </div>
+                    <div class="plane__info">
+                        <h3 class="plane__title">40%</h3>
+                        <p class="plane__desk">
+                            планы 100% гарантированный выпуск. Нет медицинской страховки
+                             необходимый
+                        </p>
+                    </div>
+                    <div class="plane__info">
+                        <h3 class="plane__title">0</h3>
+                        <p class="plane__desk">
+                            Нулевые ограничения или исключения для ранее существовавших условий
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper__sheet">
+                <div class="sheet__block--left">
+                    <img src="./image/sheet/sheet1.jpg" alt="Not image" class="sheet__img" />
+                </div>
+                <div class="sheet__block--right">
+                    <span class="sheet__block--header">лучший опыт претензий</span>
+                    <h2 class="sheet__block--h2">
+                        Дайте своим людям план, который окупится за часы, а не за недели.
+                    </h2>
+                    <p class="sheet__block--desk">
+                        Ваша команда не может дождаться спокойствия. Brella платит за диагноз,
+                         чтобы участники могли быстрее подать заявку и быстрее получить оплату через наш
+                         Пользовательский портал или мобильное приложение.
+                    </p>
+                    <button class="sheet__block--btn">Включить видео</button>
+                </div>
+            </section>
+            <section class="wrapper__employers">
+                <div class="employers__block">
+                    <span class="employers__header">для работодателей</span>
+                    <h2 class="employers__h2">
+                        Простая регистрация сочетается с простым администрированием.
+                    </h2>
+                    <p class="employers__desk">
+                        Brella обеспечивает 100% безбумажное внедрение, регистрацию и
+                         админ. Подключитесь к нашим платформам, или мы подключимся к вашим.
+                    </p>
+                    <button class="employers__btn">Узнать больше</button>
+                </div>
+            </section>
+            <section class="wrapper__sponsors">
+                <h2 class="sponsors__title">С гордостью поддерживается</h2>
+                <div class="sponsors__list">
+                    <button class="sponsors__btn btn__left">
+                        <img src="./image/sponsors/btn-left.png" alt="Left" class="list__btn" />
+                    </button>
+                    <img src="./image/sponsors/1.svg" alt="No image" title="Brewer lane" class="sponsors__logo flex" />
+                    <img src="./image/sponsors/2.svg" alt="No image" title="Two sigma" class="sponsors__logo flex" />
+                    <img src="./image/sponsors/3.svg" alt="No image" title="Digitalis" class="sponsors__logo flex" />
+                    <img src="./image/sponsors/4.svg" alt="No image" title="Founder" class="sponsors__logo flex" />
+                    <img src="./image/sponsors/5.svg" alt="No image" title="SymphonyAl" class="sponsors__logo flex" />
+                    <button class="sponsors__btn btn__right">
+                        <img src="./image/sponsors/btn-right.png" alt="Right" class="list__btn" />
+                    </button>
+                </div>
+                <div class="sponsors__bottom"></div>
+            </section>
+            <section class="wrapper__cards">
+                <div class="wrapper__cards--container">
+                    <div class="wrapper__card">
+                        <img src="./image/cards/1.jpg" alt="Not image" class="card__pic" />
+                        <span class="card__span">Подкаст</span>
+                        <h3 class="card__title">
+                            Улучшение добровольных пособий с практикой добровольных пособий NFP
+                             Лидер, Ким Хилд
+                        </h3>
+                    </div>
+                    <div class="wrapper__card">
+                        <img src="./image/cards/2.jpg" alt="Not image" class="card__pic" />
+                        <span class="card__span">Страховые инновации</span>
+                        <h3 class="card__title">
+                            Как разработать более простые страховые выплаты
+                        </h3>
+                    </div>
+                    <div class="wrapper__card">
+                        <img src="./image/cards/3.jpg" alt="Not image" class="card__pic" />
+                        <span class="card__span">Стратегия преимуществ</span>
+                        <h3 class="card__title">
+                            Обзор преимуществ для руководителей с Дэном Ацети
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper__contacts">
+                <div class="wrapper__contacts--container">
+                    <div class="wrapper__contacts--left">
+                        <img src="./image/contacts/1.jpg" alt="No image" class="contacts__pic" />
+                    </div>
+                    <div class="wrapper__contacts--right">
+                        <div class="wrapper__contacts--text">
+                            <h2 class="contacts__title">
+                                Готовы познакомиться с дополнительным решением для здоровья от Brella?
+                            </h2>
+                            <span class="contacts__text">Давай поговорим.</span>
+                            <button class="contacts__btn">Связаться</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container--top">
+                    <!-- ? Верхний контейнер -->
+                    <div class="footer__nav">
+                        <div class="footer__nav--list footer__logo">
+                            <img src="./image/logo/logo2.svg" alt="Brella" class="footer__logo--pic" />
+                        </div>
+                        <div class="footer__nav--list">
+                            <h4 class="nav__title">Присоединяйтесь к Брелла</h4>
+                            <ul class="footer__ul">
+                                <li class="footer__li--item">
+                                    <a class="footer__li--link" href="#!">Наш план</a>
+                                </li>
+                                <li class="footer__li--item">
+                                    <a class="footer__li--link" href="#!">Работодатели</a>
+                                </li>
+                                <li class="footer__li--item">
+                                    <a class="footer__li--link" href="#!">Брокеры</a>
+                                </li>
+                                <li class="footer__li--item">
+                                    <a class="footer__li--link" href="#!">Участники</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav--list">
+                            <h4 class="nav__title">Компания</h4>
+                            <ul class="footer__ul">
+                                <li class="footer__li--item">
+                                    <a class="footer__li--link" href="#!">О нас</a>
+                                </li>
+                                <li class="footer__li--item">
+                                    <a class="footer__li--link" href="#!">Блог</a>
+                                </li>
+                                <li class="footer__li--item">
+                                    <a class="footer__li--link" href="#!">Карьера</a>
+                                </li>
+                                <li class="footer__li--item">
+                                    <a class="footer__li--link" href="#!">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__form">
+                        <span class="form__title">Получать новости</span>
+                        <p class="form__text">
+                            Подпишитесь, чтобы получать новости и информацию о преимуществах на свой почтовый ящик
+                             раз в месяц.
+                        </p>
+                        <form action="/email" method="post" class="footer__form--element">
+                            <input title="Enter email" type="email" placeholder="Электронная почта*" name="email"
+                                class="footer__form--input">
+                            <button title="Enter email" type="submit" class="footer__form--btn">
+                                <img src="./image/ico/vr1.png" alt="Submit" class="btn__vector">
+                            </button>
+                        </form>
+                        <div class="footer__forms--icon">
+                            <a href="#!" class="form__ico--link"><img src="./image/ico/footer-ico1.png" alt="Not image"
+                                    class="form__ico"></a>
+                            <a href="#!" class="form__ico--link"><img src="./image/ico/footer-ico2.png" alt="Not image"
+                                    class="form__ico"></a>
+                            <a href="#!" class="form__ico--link"><img src="./image/ico/footer-ico3.png" alt="Not image"
+                                    class="form__ico"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__gap"></div>
+                <!-- ! Разделитель -->
+                <div class="footer__container--bottom">
+                    <div class="footer__bottom__text">
+                        <p class="bottom__desk--one">
+                            Brella — это политика ограниченных льгот; это не замена для медицинского страхования. 
+                             информация, представленная на этом веб-сайте, носит исключительно иллюстративный характер. Полное описание
+                             льготы, ограничения и исключения указаны в вашем страховом свидетельстве и
+                             применимые райдеры. Сводку ограничений и исключений см. в разделе часто задаваемых вопросов. Значения выплат
+                             перечисленные не гарантируют сумму, подлежащую выплате за перечисленные условия. Продукт недоступен в
+                             все штаты. Все покрытие регулируется положениями и условиями политики мастер-группы.
+                        </p>
+                        <p class="bottom__desk--two">
+                            Брелла застрахована компанией по страхованию жизни Greenhouse (NAIC 80055). Форма № ПФСБ11-ТХ
+                        </p>
+                        <p class="bottom__desk--three">
+                            Свяжитесь с нами по почте 2093 Philadelphia Pike #2496, Claymont, DE 19703 и по телефону:<span
+                                class="footer__tel">(844) 987-1070</span>
+                        </p>
+                    </div>
+                    <div class="footer__company">
+                        <div class="footer__company--title"><span class="footer__company--name">© 2021 Брелла Страхование
+                                Inc. Все права защищены.</span></div>
+                        <div class="privacy-policy__content">
+                            <a href="#!" class="privacy-policy">Конфиденциальность</a>
+                            <a href="#!" class="terms-of-use">Условия использования</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ! Нижний контенер -->
+            </div>
+        </footer>
+    </div>
+    <!-- container -->
+</body>
+
+</html>
