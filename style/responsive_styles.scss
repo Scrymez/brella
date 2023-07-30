@@ -1,0 +1,151 @@
+//*BURGER
+
+.header__burger{
+    position: absolute;
+    z-index: 5;
+    right: 48px;
+    width: 20px;
+    height: 20px;
+    display: none;
+    // justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    cursor: pointer;
+    .burger__line{
+        margin-top: 6px;
+        width: 20px;
+        height: 2px;
+        background-color: #2f705e;
+        border-radius: 2px;
+    }
+    .burger__line:nth-child(2){
+        width: 15px;
+    }
+    .burger__line:first-child{
+        margin-top: 0;
+    }
+    .burger__line:first-child{
+        transition: .3s;
+        transform: translateY(0px) rotate(0deg);
+    }
+    .burger__line:nth-child(2){
+        transition: .3s;
+        opacity: 1;
+    }
+    .burger__line:last-child{
+        transition: .3s;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+
+//? Добавляем класс active для анимации бургера
+.header__burger.active{
+    .burger__line:nth-child(2){
+        opacity: 0;
+    }
+    .burger__line:first-child{
+        transition: .3s;
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger__line:last-child{
+        transition: .3s;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.popup {
+    position: absolute;
+    top: 65px;
+    right: 175px;
+    z-index: 4;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 100%;
+    min-height: 240px;
+    height: 300px;
+    margin: 0 auto;
+    display: none;//!
+    background: rgba(235, 213, 213, .7);
+    border-radius: 6px;
+    .popup__form{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        left: 20%;
+        width: 50%;
+        margin-top: 5px;
+        .form__h3{
+        color: #214e41;
+        font-size: 20px;
+        font-family: "roboto", sans-serif;
+        line-height: 46px;
+        font-weight: bold;
+        text-transform: uppercase;
+        }
+        .popup__input{
+            max-width: 300px;
+            height: 25px;
+            border: 1px solid #214e41;
+            border-radius: 6px;
+        }
+        .popup__input::placeholder{
+            padding-left: 5px;
+            font-family: "raleway", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #424e4a;
+            line-height: 24px;
+        }
+        .popup__btn{
+            margin-top: 20px;
+            color: #214e41;
+            font-family: "raleway", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            max-width: 300px;
+            height: 25px;
+            border: 1px solid #214e41;
+            border-radius: 6px;
+        }
+    }
+}
+.popup_active{
+    transition: .3s;
+    display: block;
+}
+
+
+
+
+
+@media screen and (max-width: 901px) {
+    .header__nav {
+        position: relative;
+        display: none;
+    }
+    .active{
+        transition: .3s;
+        position: fixed;
+        right: 0;
+        background-color: rgba(154, 153, 153, 0.3);
+        height: 100%;
+        width: 100%;
+        z-index: 4;
+        display: flex;
+        overflow-y: auto;
+        padding: 50px 40px;
+    }
+    .header__burger{
+        display: flex;
+        position: relative;
+        z-index: 7;
+        right: 48px;
+        width: 20px;
+        height: 20px;
+    }
+}
+

@@ -15,6 +15,7 @@
     <title>Brella</title>
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive_styles.css">
   </head>
   <body>
     <div class="container">
@@ -31,6 +32,8 @@
             />
           </a>
         </div>
+
+
         <nav class="header__nav">
           <ul class="header__menu">
             <li class="header__menu-item">
@@ -77,13 +80,32 @@
               >
             </li>
             <li class="header__menu-item">
-              <a href="#!" class="header__menu-link" title="RU">EN</a>
+              <a href="./indexru.html" class="header__menu-link" title="RU">EN</a>
             </li>
           </ul>
         </nav>
+
+        <div class="header__burger">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+        
+        <div class="popup">
+          <form class="popup__form">
+            <div class="form__h3">Your name</div>
+            <input class="popup__input" type="text" id="name" placeholder="Your name">
+            <div class="form__h3">Your email</div>
+            <input class="popup__input" type="email" id="email" placeholder="Your email">
+            <div class="form__h3">Your tel</div>
+            <input class="popup__input" type="tel" name="tel" id="tel" placeholder="Your tel">
+            <button class="popup__btn">Enter</button>
+          </form>
+        </div>
+
       </header>
       <main class="wrapper">
-        <section class="intro">
+        <section id="one" class="intro">
           <div class="intro__wrapper">
             <h1 class="intro__title">
               Give your team peace of mind with supplemental health insurance
@@ -104,7 +126,7 @@
             </form>
           </div>
         </section>
-        <aside class="aside" title="Brella is cool!">
+        <aside id="two" class="aside" title="Brella is cool!">
           <div class="aside__block">
             <img
               src="./image/ico/aside1.png"
@@ -151,7 +173,7 @@
             </div>
           </div>
         </aside>
-        <section class="wrapper__chart">
+        <section id="three" class="wrapper__chart">
           <div class="chart__container">
             <div class="chart__container--left">
               <span class="chart__greetings--left"> Why Brella? </span>
@@ -201,7 +223,7 @@
             </div>
           </div>
         </section>
-        <section class="wrapper__text-content">
+        <section id="four" class="wrapper__text-content">
           <div class="wrapper__text--left">
             <div class="text__block--first">
               <span class="text__block--header"> brella brings </span>
@@ -229,7 +251,7 @@
             </div>
           </div>
         </section>
-        <section class="wrapper__plane">
+        <section id="six" class="wrapper__plane">
           <div class="plane__block--first">
             <div class="plane__block--left">
               <span class="plane__block--header">one plan, more coverage</span>
@@ -281,7 +303,7 @@
             </div>
           </div>
         </section>
-        <section class="wrapper__sheet">
+        <section id="seven" class="wrapper__sheet">
           <div class="sheet__block--left">
             <img
               src="./image/sheet/sheet1.jpg"
@@ -302,7 +324,7 @@
             <button class="sheet__block--btn">Play Video</button>
           </div>
         </section>
-        <section class="wrapper__employers">
+        <section id="eight" class="wrapper__employers">
           <div class="employers__block">
             <span class="employers__header">for employers</span>
             <h2 class="employers__h2">
@@ -315,7 +337,7 @@
             <button class="employers__btn">Learn more</button>
           </div>
         </section>
-        <section class="wrapper__sponsors">
+        <section id="nine" class="wrapper__sponsors">
           <h2 class="sponsors__title">Proudly backed by</h2>
           <div class="sponsors__list">
             <button class="sponsors__btn btn__left">
@@ -365,7 +387,7 @@
           </div>
           <div class="sponsors__bottom"></div>
         </section>
-        <section class="wrapper__cards">
+        <section id="ten" class="wrapper__cards">
           <div class="wrapper__cards--container">
             <div class="wrapper__card">
               <img
@@ -373,7 +395,7 @@
                 alt="Not image"
                 class="card__pic"
               />
-              <span class="card__span">Podcast</span>
+              <p class="card__span">Podcast</p>
               <h3 class="card__title">
                 Better Voluntary Benefits with NFP Voluntary Benefits Practice
                 Leader, Kim Heald
@@ -385,7 +407,7 @@
                 alt="Not image"
                 class="card__pic"
               />
-              <span class="card__span">Insurance Innovation</span>
+              <p class="card__span">Insurance Innovation</p>
               <h3 class="card__title">
                 How to Design Simpler Insurance Benefits
               </h3>
@@ -396,14 +418,14 @@
                 alt="Not image"
                 class="card__pic"
               />
-              <span class="card__span">Benefits Strategy</span>
+              <p class="card__span">Benefits Strategy</p>
               <h3 class="card__title">
                 Executive Benefits Outlook with Dan Aceti
               </h3>
             </div>
           </div>
         </section>
-        <section class="wrapper__contacts">
+        <section id="eleven" class="wrapper__contacts">
           <div class="wrapper__contacts--container">
             <div class="wrapper__contacts--left">
               <img
@@ -517,5 +539,6 @@
       </footer>
     </div>
     <!-- container -->
+    <script src="./js/script.js"></script>
   </body>
 </html>

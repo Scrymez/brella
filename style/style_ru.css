@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 .container .header .header__nav .header__menu .header__menu-item {
-  margin-left: 50px;
+  margin-left: 38px;
 }
 .container .header .header__nav .header__menu .header__menu-item:first-child {
   margin-left: 0px;
@@ -540,7 +540,7 @@ body {
   left: 120px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: top;
 }
 .container .wrapper .wrapper__plane .plane__block--last .plane__info {
   position: relative;
@@ -642,7 +642,7 @@ body {
   color: #214e41;
   border-bottom: 2px solid #214e41;
   width: 105px;
-  height: 30px;
+  height: 37px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background-color: white;
@@ -709,7 +709,7 @@ body {
   color: #214e41;
   border-bottom: 2px solid #214e41;
   width: 130px;
-  height: 30px;
+  height: 37px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background: none;
@@ -1025,7 +1025,7 @@ body {
 .container .footer .footer__container .footer__container--top .footer__form .footer__form--element .footer__form--input::-moz-placeholder {
   position: relative;
   top: 5px;
-  left: 21px;
+  left: 0px;
   font-family: Raleway;
   font-size: 14px;
   font-weight: 400;
@@ -1037,7 +1037,7 @@ body {
 .container .footer .footer__container .footer__container--top .footer__form .footer__form--element .footer__form--input::placeholder {
   position: relative;
   top: 5px;
-  left: 21px;
+  left: 0px;
   font-family: Raleway;
   font-size: 14px;
   font-weight: 400;
@@ -1060,6 +1060,11 @@ body {
 }
 .container .footer .footer__container .footer__container--top .footer__form .footer__forms--icon .form__ico--link {
   margin-right: 25px;
+}
+.container .footer .footer__container .footer__container--top .footer__form .footer__forms--icon .form__ico--link:hover {
+  transition: 0.2s;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5), inset 0px -2px 4px rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
 }
 .container .footer .footer__container .footer__gap {
   width: 100%;
@@ -1148,4 +1153,4 @@ body {
 .container .footer .footer__container .footer__container--bottom .footer__company .privacy-policy__content .terms-of-use {
   margin-left: 9px;
   color: #fff;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_ru.css.map */
